@@ -186,7 +186,7 @@ class Application(Frame):
         self.six_bttn = Button(self, text="6", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr(6))
         self.six_bttn.grid(row=2, column=2)
 
-        self.one_bttn = Button(self, text="1", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr(1))
+        self.one_bttn = Button(self, text="Nashika_Auguste", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr(Auguste))
         self.one_bttn.grid(row=3, column=0)
 
         self.two_bttn = Button(self, text="2", width=9, height=3, bg='LightBlue', fg='red',command=lambda: self.add_chr(2))
@@ -212,6 +212,58 @@ class Application(Frame):
 
         self.sqr_bttn = Button(self, text="^", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr('^'))
         self.sqr_bttn.grid(row=3, column=5)
+        def sin():
+    global expression
+    expression = float(expression)
+    expression = round(math.sin(math.radians(expression)), 5)
+    equation.set(float(expression))
+    expression = str(expression)
+
+
+def cos():
+    global expression
+    expression = float(expression)
+    expression = round(math.cos(math.radians(expression)), 5)
+    equation.set(float(expression))
+    expression = str(expression)
+
+
+def tan():
+    global expression
+    expression = float(expression)
+    expression = round(math.tan(math.radians(expression)), 5)
+    equation.set(float(expression))
+    expression = str(expression)def sin():
+    global expression
+    expression = float(expression)
+    expression = round(math.sin(math.radians(expression)), 5)
+    equation.set(float(expression))
+    expression = str(expression)
+
+
+def cos():
+    global expression
+    expression = float(expression)
+    expression = round(math.cos(math.radians(expression)), 5)
+    equation.set(float(expression))
+    expression = str(expression)
+
+
+def tan():
+    global expression
+    expression = float(expression)
+    expression = round(math.tan(math.radians(expression)), 5)
+    equation.set(float(expression))
+    expression = str(expression)
+    def inv():
+    global inverted
+    inverted = not inverted
+        if not inverted:
+   sin = Button(gui, text='sin', fg='black', bg='light green', command=sin, height=1, width=7)
+        sin.grid(row=2, column=4)
+    else:
+        sin = Button(gui, text='sin^-1', fg='black', bg='light green', command=asin, height=1, width=7)
+        sin.grid(row=2, column=4)
 
 root = Tk()
 root.geometry()
